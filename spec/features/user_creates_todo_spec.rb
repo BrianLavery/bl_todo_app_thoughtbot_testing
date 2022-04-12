@@ -4,7 +4,7 @@ RSpec.feature 'User creates todo' do
   scenario 'user successfully creates a todo' do
     todo_title = 'My first todo'
 
-    sign_in
+    sign_in_as('me@example.com')
     click_link 'Add a new todo'
     fill_in 'Title', with: todo_title
     click_on 'Submit'

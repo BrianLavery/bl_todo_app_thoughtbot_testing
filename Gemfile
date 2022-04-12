@@ -28,6 +28,9 @@ end
 
 group :test do
   gem 'capybara', '2.7.1'
+  # gem 'database_cleaner'
+  # https://github.com/DatabaseCleaner/database_cleaner
+  gem 'database_cleaner-active_record'
 end
 
 group :development do
